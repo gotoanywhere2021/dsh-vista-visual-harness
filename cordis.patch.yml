@@ -1,0 +1,5 @@
+# VISTA visual harness bundle: inserts the host plugin row into the profile.
+- insert:
+    - id: vista-visual-harness
+      name: '@local/vista-visual-harness'
+      config: {}

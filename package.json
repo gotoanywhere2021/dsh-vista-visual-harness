@@ -1,0 +1,56 @@
+{
+  "name": "@local/vista-visual-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "icon": "icon.svg",
+  "description": "VISTA visual harness: lossless visual memory, model-directed inspect, exact pixel readout, notes and one-action-per-turn play for interactive desktop worlds.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "vista",
+    "visual-harness",
+    "computer-use",
+    "gui-automation",
+    "screen-capture"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gotoanywhere2021/dsh-vista-visual-harness.git"
+  },
+  "homepage": "https://github.com/gotoanywhere2021/dsh-vista-visual-harness#readme",
+  "bugs": {
+    "url": "https://github.com/gotoanywhere2021/dsh-vista-visual-harness/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "install.ps1",
+    "install.cmd",
+    "engine/vista.py",
+    "engine/vista_harness/**"
+  ],
+  "scripts": {
+    "smoke": "node tests/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
