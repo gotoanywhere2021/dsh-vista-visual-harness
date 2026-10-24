@@ -94,8 +94,9 @@ read the returned image, state what changed
 update vista_notes
 ```
 
-More examples in the paper's prompt templates (see the sibling skill repository),
-or ask the agent in natural language, e.g.:
+The paper's Appendix A.5 shows the short prompt templates this harness was evaluated
+with, and Appendix A.4 documents the tool contract in pseudocode. You can also simply
+ask the agent in natural language, e.g.:
 
 > "Watch Notepad, type `hello`, and show me the result."
 >
